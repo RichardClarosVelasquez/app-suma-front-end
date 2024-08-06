@@ -7,9 +7,9 @@ export class SumatoriaController {
     constructor(private readonly sumatoriaService: SumatoriaService) { }
 
     @Post()
-    create(@Body() body: { numero1: number; numero2: number }): Promise<Sumatoria> {
-        const { numero1, numero2 } = body;
-        return this.sumatoriaService.create(numero1, numero2);
+    create(@Body() body: { numero1: number; numero2: number; numero3: number }): Promise<Sumatoria> {
+        const { numero1, numero2, numero3 } = body;
+        return this.sumatoriaService.create(numero1, numero2, numero3);
     }
 
     @Get()

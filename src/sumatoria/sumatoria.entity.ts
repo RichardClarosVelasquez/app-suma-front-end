@@ -1,6 +1,6 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity()
+@Entity({name: 'sumatoria'})
 export class Sumatoria {
     @PrimaryGeneratedColumn()
     id?: number;
@@ -9,5 +9,7 @@ export class Sumatoria {
     @Column()
     numero2: number;
     @Column()
-    resultado: number;
+    numero3: number;
+    @Column()
+    resultado: number;    
 }

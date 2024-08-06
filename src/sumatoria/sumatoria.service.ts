@@ -10,9 +10,9 @@ export class SumatoriaService {
         private sumatoriaRepository: Repository<Sumatoria>,
     ) { }
 
-    async create(numero1: number, numero2: number): Promise<Sumatoria> {
-        const resultado = numero1 + numero2;
-        const sumatoria = this.sumatoriaRepository.create({ numero1, numero2, resultado });
+    async create(numero1: number, numero2: number, numero3: number): Promise<Sumatoria> {
+        const resultado = numero1 + numero2 + numero3;
+        const sumatoria = this.sumatoriaRepository.create({ numero1, numero2, numero3, resultado });
         return this.sumatoriaRepository.save(sumatoria);
     }
 

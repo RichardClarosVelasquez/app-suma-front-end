@@ -8,10 +8,10 @@ import { Sumatoria } from './sumatoria/sumatoria.entity';
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
-      port: 5432,
+      port: 5433,
       username: 'postgres',
-      password: 'root',
-      database: 'Sumatoria',
+      password: 'al0hech0pech0',
+      database: 'certificacionAcustica',
       entities: [Sumatoria],
       synchronize: true,
     }),
