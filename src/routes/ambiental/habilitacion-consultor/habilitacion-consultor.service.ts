@@ -10,7 +10,13 @@ export class HabilitacionConsultorService {
         private readonly habilitacionConsultorRepository: Repository<HabilitacionConsultor>,
     ) { }
 
-    async findAll(): Promise<HabilitacionConsultor[]> {
-        return await this.habilitacionConsultorRepository.find();
+    // async findAll(): Promise<HabilitacionConsultor[]> {
+    //     return await this.habilitacionConsultorRepository.find();
+    // }
+
+    async findSelectedColumns(): Promise<Partial<HabilitacionConsultor>[]> {
+        return this.habilitacionConsultorRepository.find({
+            select: ['id_consultor','nombres','ap_paterno','ap_materno','tercer_apellido'], // Cambia 'column1', 'column2' y 'column3' por los nombres reales de las columnas
+        });
     }
 }

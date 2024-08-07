@@ -5,42 +5,42 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 export class HabilitacionConsultor {
     @PrimaryGeneratedColumn()
     id_consultor?: number;
-    // @Column()
-    // ci_consultor: string;
-    // @Column()
-    // complemento_consultor: string;
-    // @Column()
-    // expedido: string;
-    // @Column()
-    // nombres: string;
-    // @Column()
-    // ap_paterno: string;
-    // @Column()
-    // ap_materno: string;
-    // @Column()
-    // tercer_apellido: string;
-    // @Column()
-    // profesion: string;
-    // @Column()
-    // fecha_emision_renca: Date;
-    // @Column()
-    // nro_renca: string;
-    // @Column()
-    // domicilio: string;
-    // @Column()
-    // telefono: string;
-    // @Column()
-    // fecha_vencimiento_renca: Date;
-    // @Column()
-    // celular: string;
-    // @Column()
-    // categoria: string;
-    // @Column()
-    // oid_consultor: string;
-    @Column()
+    @Column({ nullable: true})
+    ci_consultor: string;
+    @Column({ nullable: true})
+    complemento_consultor: string;
+    @Column({ nullable: true})
+    expedido: string;
+    @Column({ nullable: true})
+    nombres: string;
+    @Column({ nullable: true})
+    ap_paterno: string;
+    @Column({ nullable: true})
+    ap_materno: string;
+    @Column({ nullable: true})
+    tercer_apellido: string;
+    @Column({ nullable: true})
+    profesion: string;
+    @Column({ nullable: true})
+    fecha_emision_renca: Date;
+    @Column({ nullable: true})
+    nro_renca: string;
+    @Column({ nullable: true})
+    domicilio: string;
+    @Column({ nullable: true})
+    telefono: string;
+    @Column({ nullable: true})
+    fecha_vencimiento_renca: Date;
+    @Column({ nullable: true})
+    celular: string;
+    @Column({ nullable: true})
+    categoria: string;
+    @Column({ nullable: true})
+    oid_consultor: string;
+    @Column({ nullable: true})
     id_estado: number;
-    // @Column()
-    // ruta_adjunto: string; //es text en postgresql
-    // @Column()
-    // tipo_adjunto: number;
+    @Column({ nullable: true})
+    ruta_adjunto: string; //es text en postgresql
+    @Column({ nullable: true})
+    tipo_adjunto: number;
 }
